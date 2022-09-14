@@ -38,22 +38,7 @@ public class PanelAchievement extends JPanel implements OrbSever {
 	       PanelAchievement.achievementTitle.setFont(font);
 	       this.setBorder(BorderFactory.createLineBorder(Color.black));
 	       PanelAchievement.achievementTitle.setEditable(false);
-		for (int i = 0; i < 3; i++) {
-			String text = "";
-			switch (PanelAchievement.ar.key().get(i)) {
-			case "easy":
-				text = "Dễ";
-				break;
-			case "normal":
-				text = "Thường";
-				break;
-			case "hard":
-				text = "Khó";
-				break;
-			}
-
-			PanelAchievement.achievementTitle.append(text + ":\t" + PanelAchievement.ar.value().get(i) + "\n");
-		}
+		print();
 		PanelAchievement.achievementTitle.setPreferredSize(new Dimension(200, 200));
 
 		JPanel pn1 = new JPanel();

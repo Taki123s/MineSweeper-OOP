@@ -24,14 +24,14 @@ public class Control {
 	Game game;
 	Achievement ar;
 	String hardCore;
-	String winSound="src\\win.mp3";
-	String loseSound = "src\\lose.mp3";
-	String clickSound ="src\\click.mp3";
-	String camCoSound="src\\camco.mp3";
-	String huycoSound ="src\\huyco.mp3";
-	String startSound="src\\sus.mp3";
+	String winSound="src\\sound\\win.mp3";
+	String loseSound = "src\\sound\\lose.mp3";
+	String clickSound ="src\\sound\\click.mp3";
+	String camCoSound="src\\sound\\camco.mp3";
+	String huycoSound ="src\\sound\\huyco.mp3";
+	String startSound="src\\sound\\sus.mp3";
 	
-	String backgroundSound="src\\background.mp3";
+	String backgroundSound="src\\sound\\background.mp3";
 	MP3Player lose = new MP3Player(new File(loseSound));
 	MP3Player win = new MP3Player(new File(winSound));
 	MP3Player click = new MP3Player(new File(clickSound));

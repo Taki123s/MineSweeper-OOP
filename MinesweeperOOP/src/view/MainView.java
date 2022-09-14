@@ -67,7 +67,7 @@ public class MainView extends JFrame{
 			this.panelPlayer = new PanelPlayer(game);
 			this.panelNotify = new PanelNotifycation(game);
 			this.panelAchievement = PanelAchievement.getInstance();
-			ImageIcon img = new ImageIcon("./src/icon.png");
+			ImageIcon img = new ImageIcon("./src/image/icon.png");
 			setIconImage(img.getImage());
 			setLayout(new BorderLayout());
 			

@@ -37,9 +37,9 @@ public class PanelPlayer extends JPanel implements OrbSever {
 			for (int j = 0; j < game.getHeight(); j++) {
 				JButton k = new JButton();
 
-				k.setBackground(Color.gray);
+			
 				k.setBorder(new LineBorder(Color.black));
-				ImageIcon icon = new ImageIcon("./src/normal.png");
+				ImageIcon icon = new ImageIcon("./src/image/normal.png");
 
 				k.setIcon(icon);
 
@@ -92,7 +92,7 @@ public class PanelPlayer extends JPanel implements OrbSever {
 						if (gameP.getPlay()[i][j] == -1) {
 
 							arrayButton[i][j].setFont(new Font("Arial", Font.PLAIN, 25));
-							ImageIcon icon = new ImageIcon("./src/bomb.png");
+							ImageIcon icon = new ImageIcon("./src/image/bomb.png");
 
 							Image img = icon.getImage();
 							Image newimg = img.getScaledInstance(arrayButton[i][j].getWidth(),
@@ -110,7 +110,7 @@ public class PanelPlayer extends JPanel implements OrbSever {
 				}
 				if (gameP.getCheckOpen()[i][j] == false) {
 					if (gameP.getCo()[i][j] == true) {
-						ImageIcon icon = new ImageIcon("./src/camco.png");
+						ImageIcon icon = new ImageIcon("./src/image/camco.png");
 
 						Image img = icon.getImage();
 						Image newimg = img.getScaledInstance(arrayButton[i][j].getWidth(),
@@ -120,7 +120,7 @@ public class PanelPlayer extends JPanel implements OrbSever {
 						arrayButton[i][j].setIcon(icon);
 					}
 					if (gameP.getCo()[i][j] == false) {
-						ImageIcon icon = new ImageIcon("./src/normal.png");
+						ImageIcon icon = new ImageIcon("./src/image/normal.png");
 
 						Image img = icon.getImage();
 						Image newimg = img.getScaledInstance(arrayButton[i][j].getWidth(),
